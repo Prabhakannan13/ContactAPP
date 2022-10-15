@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewcontactComponent } from './viewcontact/viewcontact.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoute:Routes=[
   {
@@ -20,7 +21,8 @@ const appRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoute)
+    RouterModule.forRoot(appRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
